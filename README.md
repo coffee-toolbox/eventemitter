@@ -94,8 +94,8 @@ I'm using EventEmitter2 on my project until one day I need some internal info
 to debug. I found its code is *optimized* for no human being. And I found
 EventEmitter3, 4, 5 and saw their 'why anonther'. Then I was confused. Why
 complicate such a simple problem by importing codes that you weren't read and
-trust? So this version is not a re-invented wheel, but a remade wheel for
-myself, only implementiing APIs that I need.
+trust? So this version is not a re-invented wheel but a remade wheel for
+myself, only implementing APIs that I need.
 
 I believe it is also useful for most people. And its simplicity made it easy to
 read and to be trusted.
