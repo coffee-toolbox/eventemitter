@@ -2,7 +2,7 @@
 
 EventEmitter in Coffeescript.
 
-EventEmitter is a node.js EventEmitter-like libraray for browser.
+EventEmitter is a node.js EventEmitter-like library for browser.
 
 ### NOTE
 Do NOT download from npm!
@@ -41,7 +41,7 @@ For any one who values his life, please be away from npm.
             # ...
 ```
 
-### Listen **constantly** on an event.
+### Listen constantly on an event.
 
 Registering and unregistering.
 
@@ -58,7 +58,7 @@ Registering and unregistering.
 
 The `listener` is called synchronously when `eventname` is emitted.
 
-When more then one listener is added, they would be called synchronously in the
+If more than one listener is added, they would be called synchronously in the
 order as they were registered.
 
 ### Listen limited times on an event.
@@ -82,5 +82,20 @@ The listener is automatically removed when called given times.
 
     ee.emit 'eventname', args...
 ```
-The `args...` are forward to the `listener`. All listener of the event and
+
+The `args...` are forwarded to the `listener`. All listener of the event are
 called in the order as they were registered.
+
+----
+
+## Why another EventEmitter?
+
+I'm using EventEmitter2 on my project until one day I need some internal info
+to debug. I found its code is *optimized* for no human being. And I found
+EventEmitter3, 4, 5 and saw their 'why anonther'. Then I was confused. Why
+complicate such a simple problem by importing codes that you weren't read and
+trust? So this version is not a re-invented wheel, but a remade wheel for
+myself, only implementiing APIs that I need.
+
+I believe it is also useful for most people. And its simplicity made it easy to
+read and to be trusted.
