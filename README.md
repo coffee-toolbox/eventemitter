@@ -26,8 +26,10 @@ For any one who values his life, please be away from npm.
 
 ### Require:
 
+make sure to use the latest coffee-loader with transpile enabled in webpack
+
 ```coffeescript
-    {EventEmitter} = require '@coffee-toolbox/eventemitter'
+    EventEmitter = require '@coffee-toolbox/eventemitter'
 ```
 
 ### Create new EventEmitter:

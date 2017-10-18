@@ -1,6 +1,6 @@
 {
   "name": "@coffee-toolbox/eventemitter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "dispatch event and synchronously run event listeners",
   "main": "EventEmitter.coffee",
   "scripts": {
@@ -11,7 +11,8 @@
     "url": "git+https://github.com/coffee-toolbox/eventemitter.git"
   },
   "keywords": [
-    "async", "event"
+    "async",
+    "event"
   ],
   "author": "James Ruan <ruanbeihong@gmail.com>",
   "license": "MIT",
@@ -20,10 +21,9 @@
   },
   "homepage": "https://github.com/coffee-toolbox/eventemitter#readme",
   "dependencies": {
-    "es6-weak-map": "^2.0.1"
-  },
-  "devDependencies": {
-    "coffee-loader": "^0.7.2",
-    "coffee-script": "^1.12.2"
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "coffee-loader": "https://github.com/webpack-contrib/coffee-loader.git",
+    "coffeescript": "^2.0.1"
   }
 }

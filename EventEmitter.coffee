@@ -1,7 +1,4 @@
-'use strict'
-WeakMap = require('es6-weak-map')
-
-class EventEmitter
+export default class EventEmitter
 	constructor: ->
 		@_events = {}
 		@_transient_events_map = new WeakMap()
@@ -51,6 +48,3 @@ class EventEmitter
 		for f in @_events[event]
 			do (f)->
 				f v...
-
-module.exports =
-	EventEmitter: EventEmitter
